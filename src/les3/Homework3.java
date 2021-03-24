@@ -146,14 +146,6 @@ class LinkedList<T> {
         return temp;
     }
 
-    public void display() {
-        Link<T> current = first;
-        while (current != null) {
-            System.out.print(current.getValue() + " ");
-            current = current.getNext();
-        }
-    }
-
     public T find(T searchNode) {
         Link<T> findNote = new Link<>(searchNode);
         Link<T> current = first;
